@@ -1,0 +1,164 @@
+.mybooks {
+    width: 90%;
+    max-width: 1300px;
+    margin: 50px auto;
+}
+
+.mybooks h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #111827;
+    font-size: 34px;
+}
+
+.mybook-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mybook-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: .3s;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .06);
+}
+
+.mybook-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, .12);
+}
+
+.mybook-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mybook-info {
+    padding: 20px;
+}
+
+.mybook-info h2 {
+    color: #111827;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.mybook-info p {
+    color: #6b7280;
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+.mybook-info strong {
+    color: #111827;
+}
+
+/* Type Badge */
+
+.type {
+    display: inline-block;
+    margin: 12px 0;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.buy {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.borrow {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.rent {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+/* Return Code */
+
+.return-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    padding: 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #f9fafb;
+}
+
+.return-code span {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #111827;
+    word-break: break-all;
+}
+
+.return-code button {
+    border: none;
+    background: #111827;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s;
+    white-space: nowrap;
+}
+
+.return-code button:hover {
+    background: #374151;
+}
+
+/* Return Button */
+
+.return-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #dc2626;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.return-btn:hover {
+    background: #b91c1c;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .mybook-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mybook-card img {
+        height: 280px;
+    }
+
+    .return-code {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .return-code button {
+        width: 100%;
+    }
+}

@@ -1,0 +1,51 @@
+.history{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+}
+
+.history h1{
+    text-align:center;
+    margin-bottom:30px;
+    color:#111827;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.05);
+}
+
+th{
+    background:#111827;
+    color:white;
+    padding:16px;
+    text-align:left;
+}
+
+td{
+    padding:16px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+tr:hover{
+    background:#f9fafb;
+}
+
+.buy{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+.borrow{
+    color:#2563eb;
+    font-weight:bold;
+}
+
+.rent{
+    color:#d97706;
+    font-weight:bold;
+}
